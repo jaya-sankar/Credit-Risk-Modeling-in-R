@@ -11,5 +11,5 @@ gini_rl <- 2 * 10 / 54 * 44 / 54
 gain <- gini_root - 446 / 500 * gini_ll - 54 / 500 * gini_rl
 
 # compare the gain-column in small_tree$splits with our computed gain, multiplied by 500, and assure they are the same
-#small_tree$splits
-#improve <- gain * 500
+small_tree$splits
+improve <- gain * 500

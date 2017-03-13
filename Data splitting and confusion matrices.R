@@ -22,10 +22,10 @@ test_set$int_rate<-NULL
 # Create confusion matrix
 model_pred <- rbinom(9697, 1,0.5)
 
-#conf_matrix <- table(test_set$loan_status, model_pred)
+conf_matrix <- table(test_set$loan_status, model_pred)
 
 # Compute classification accuracy
-#acc_classification <- sum(diag(conf_matrix)) / nrow(test_set)
+acc_classification <- sum(diag(conf_matrix)) / nrow(test_set)
 
 
 
